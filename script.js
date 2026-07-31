@@ -28,8 +28,8 @@ function draw() {
 
         ctx.fillText(
             "❤️ Camila ❤️",
-            canvas.width / 2 + x * 10,
-            canvas.height / 2 - y * 10
+            canvas.width / 1 + x * 10,
+            canvas.height / 1 - y * 10
         );
     }
 
