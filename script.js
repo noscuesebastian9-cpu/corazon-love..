@@ -28,12 +28,12 @@ function draw() {
 
         ctx.fillText(
             "I love you",
-            canvas.width / 2 + x * 8,
-            canvas.height / 2 - y * 8
+            canvas.width / 2 + x * 4,
+            canvas.height / 2 - y * 4
         );
     }
 
-    t += 0.0015;
+    t += 0.005;
     requestAnimationFrame(draw);
 }
 
