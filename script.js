@@ -27,7 +27,7 @@ function draw() {
               - Math.cos(4 * a);
 
         ctx.fillText(
-            "I love you",
+            "❤️ Camila ❤️",
             canvas.width / 2 + x * 4,
             canvas.height / 2 - y * 4
         );
@@ -38,3 +38,26 @@ function draw() {
 }
 
 draw();
+function crearCorazon() {
+    const heart = document.createElement("div");
+    heart.innerHTML = "❤️";
+    heart.style.position = "fixed";
+    heart.style.left = Math.random() * window.innerWidth + "px";
+    heart.style.top = window.innerHeight + "px";
+    heart.style.fontSize = "25px";
+    heart.style.pointerEvents = "none";
+    heart.style.animation = "subir 4s linear forwards";
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 4000);
+}
+
+setInterval(crearCorazon, 300);
+
+const style = document.createElement("style");
+style.innerHTML = `
+@keyframes subir {
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(-100vh); opacity: 0; }
+}`;
+document.head.appendChild(style);
