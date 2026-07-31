@@ -9,7 +9,7 @@ function resize() {
 resize();
 window.addEventListener("resize", resize);
 
-ctx.font = "14px Arial";
+ctx.font = "10px Arial";
 ctx.fillStyle = "#ff69b4";
 
 let t = 0;
@@ -28,12 +28,12 @@ function draw() {
 
         ctx.fillText(
             "I love you",
-            canvas.width / 2 + x * 20,
-            canvas.height / 2 - y * 20
+            canvas.width / 2 + x * 10,
+            canvas.height / 2 - y * 10
         );
     }
 
-    t += 0.02;
+    t += 0.005;
     requestAnimationFrame(draw);
 }
 
