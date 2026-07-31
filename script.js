@@ -28,12 +28,12 @@ function draw() {
 
         ctx.fillText(
             "❤️ Camila ❤️",
-            canvas.width / 2 + x * 4,
-            canvas.height / 2 - y * 4
+            canvas.width / 2 + x * 10,
+            canvas.height / 2 - y * 10
         );
     }
 
-    t += 0.005;
+    t += 0.020;
     requestAnimationFrame(draw);
 }
 
