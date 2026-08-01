@@ -40,30 +40,36 @@ canvas{
     color:white;
 }
 
+#mensaje{
+    position: fixed;
+    left: 50%;
+    top: 72%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 5;
+}
+
 #mensaje h1{
-    font-size:45px;
-    color:#ff5fb2;
-    animation:brillo 2s infinite alternate;
+    color: #ff69b4;
+    font-size: 48px;
+    margin: 0;
 }
 
 #mensaje p{
-    margin-top:10px;
-    color:#ddd;
-    font-size:18px;
+    color: white;
+    font-size: 22px;
+    margin-top: 10px;
 }
 
 /* Superbike */
 #moto{
-    position:absolute;
-    width:500px;
-    max-width:85%;
-    opacity:.18;
-    left:50%;
-    top:50%;
-    transform:translate(-50%,-50%);
-    filter:drop-shadow(0 0 35px hotpink);
-    animation:flotar 8s ease-in-out infinite;
-    z-index:-2;
+    position: fixed;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+    width: 220px;
+    opacity: 0.25;
+    z-index: 1;
 }
 
 /* Corazones flotando */
