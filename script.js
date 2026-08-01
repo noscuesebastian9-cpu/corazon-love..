@@ -33,8 +33,8 @@ function draw() {
 
         ctx.fillText(
             "Camila",
-            canvas.width / 2 + x * 18,
-            canvas.height / 2 - y * 18
+            canvas.width / 2 + x * 12,
+            canvas.height / 2 - 120 - y * 12
         );
     }
 
