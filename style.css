@@ -65,7 +65,7 @@ canvas{
 #moto{
     position: fixed;
     left: 50%;
-    top: 49%;
+    top: 44%;
     transform: translate(-50%, -50%);
     width: 180px;
     opacity: 0.28;
